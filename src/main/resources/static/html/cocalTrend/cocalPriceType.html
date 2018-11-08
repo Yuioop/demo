@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>煤炭价格</title>
+    <link rel="stylesheet" href="../../style/normalize.css"/>
+    <link rel="stylesheet" href="../../style/common.css"/>
+    <link rel="stylesheet" href="../../style/cocalTrend.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="index-bg">
+
+<div class="header clear">
+    <div class="headterTab">
+        <span class="bigTitle">煤炭大势</span>
+        <div class="fl">
+            <a href="cocalPriceArea.html" class="active">煤炭价格</a>
+            <a href="cocalStorage.html">煤炭概况</a>
+        </div>
+        <div class="fr">
+            <a href="#">煤炭物流</a>
+            <a href="#">其他信息</a>
+        </div>
+    </div>
+    <a href="../../index.html" class="backIndex"><img src="../../img/home.png" class="fl"><span class="fl">返回首页</span></a>
+</div>
+<div class="container clear">
+    <div class="parent">
+        <div class="affix fl">
+            <ul>
+                <li><a href="cocalPriceArea.html">按地区分</a></li>
+                <li><a href="cocalPricePort.html">按港口分</a></li>
+                <li class="active"><a href="cocalPriceType.html">按煤种分</a></li>
+            </ul>
+        </div>
+        <div class="tabContent">
+            <div class="show active clear">
+                <div class="searchCommon">
+                    <div class="styled_select">
+                        <div id="typeChouse" class="selectCommon">
+                            请选择煤种
+                        </div>
+                        <div class="kindsTypes selcetDrop">
+                            <div class="kindsTypesWrap selectDropWrap">
+                                <p>动力煤</p>
+                                <p>炼焦煤</p>
+                                <p>无烟煤</p>
+                                <p>喷吹煤</p>
+                                <p>焦煤</p>
+                                <p>肥煤</p>
+                                <p>气煤</p>
+                                <p>瘦煤</p>
+                                <p>1/3焦煤</p>
+                                <p>气肥煤</p>
+                                <p>贫瘦煤</p>
+                                <p>褐煤</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tuBiao clear">
+                    <div class="bugle">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                    </div>
+                    <table class="tableCommonDT">
+                        <thead>
+                        <tr>
+                            <th>产品名称</th>
+                            <th>报价地区</th>
+                            <th>灰份</th>
+                            <th>挥发份</th>
+                            <th>硫份</th>
+                            <th>水份</th>
+                            <th>粘结指数</th>
+                            <th>发热量</th>
+                            <th>本期价格</th>
+                            <th>价格类型</th>
+                            <th>时间</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="txtMarquee-top">
+                        <div class="bd" id="typeGetData">
+                            <ul class="infoList" id="typeAjax">
+                                <li>
+                                    <span class="typeName">主焦煤1</span>
+                                    <span>澳大利亚1</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="typeName">主焦煤2</span>
+                                    <span>澳大利亚2</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="typeName">主焦煤3</span>
+                                    <span>澳大利亚3</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="typeName">主焦煤4</span>
+                                    <span>澳大利亚4</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="typeName">主焦煤5</span>
+                                    <span>澳大利亚5</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="typeName">主焦煤6</span>
+                                    <span>澳大利亚6</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ol class="pager">
+                        <li><a href="1" class="leftArrow"><img src="../../img/leftArrow.png" alt=""/></a></li>
+                        <li><a href="2" class="leftArrow">上一页</a></li>
+                        <li><a href="4" class="rightArrow">下一页</a></li>
+                        <li><a href="6" class="rightArrow"><img src="../../img/rightArrow.png" alt=""/></a></li>
+                    </ol>
+                </div>
+                <div style="display: flex;">
+                    <div class="itemTubiao fl">
+                        <div class="bugle">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                        </div>
+                        <div class="commonPadding">
+                            <div id="varietyTypeEchart" style="width: 100%;height:340px;"></div>
+                        </div>
+
+                    </div>
+                    <div class="itemTubiao fr">
+                        <div class="bugle">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                        </div>
+                        <div class="commonPadding">
+                            <div id="summaryTypeEchart" style="width: 100%;height:340px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../../js/echarts.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="../../js/cocalPrice/typePrice.js"></script>
+
+
+</body>
+</html>

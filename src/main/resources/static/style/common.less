@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*****************通用****************/
+body {
+  font: 14px "microsoft yahei", Arial, Helvetica, sans-serif;
+  color: #434343;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+input,select {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #434343;
+}
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+.index-bg {
+  background:#050a2a url(../img/cocalTrendBg.png) center center / cover no-repeat fixed;
+}
+
+/*煤炭大势header*/
+.header{
+  height:119px;
+  width:100%;
+  overflow: hidden;
+  background:url(../img/headBg3.png) no-repeat center 10px;
+  margin: 0 auto;
+  position: relative;
+}
+.header span{
+  display:block;
+  width:100%;
+  height:119px;
+  line-height: 64px;
+  margin:auto;
+  text-align:center;
+  color:#1DADF9;
+  font-size:30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.headterTab{
+  width: 97%;
+  height:119px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  div.fl{
+    position: absolute;
+    left:0;
+    bottom: 0;
+  }
+  div.fr{
+    position: absolute;
+    right:0;
+    bottom: 0;
+  }
+  div a{
+    display: inline-block;
+    width: 145px;
+    height: 55px;
+    line-height: 60px;
+    text-align: center;
+    color:#fff;
+    font-size: 18px;
+    background: transparent url("../img/aBtn.png") repeat-x;
+  }
+  div a.active{
+    background: transparent url("../img/aBtnActive.png") repeat-x;
+    color:#ebd647;
+  }
+  div.fl a{
+    margin-right: 20px;
+  }
+  div.fr a{
+    margin-left: 20px;
+  }
+}
+.container{
+    margin:20px auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.commonPadding{
+  padding:20px;
+  div{
+    margin-top: 25px;
+  }
+}
+
+.backIndex{
+  display: block;
+  position: absolute;
+  top:10px;
+  right:10px;
+  width: 80px;
+  height: 55px;
+  img{
+    width: 20px;
+    margin-left: 30px;
+  }
+  span{
+    font-size: 14px;
+    color: #28bfe4;;
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    }
+}

@@ -1,0 +1,338 @@
+.parent {
+  display: flex;
+}
+.affix {
+  width: 200px;
+  height: 290px;
+  margin-right: 20px;
+  background: transparent url("../img/affixBg.png") repeat-x;
+}
+.affix ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.affix ul li {
+  width: 100%;
+  height: 68px;
+}
+.affix ul li a {
+  color: #fff;
+  font-size: 18px;
+  height: 68px;
+  line-height: 68px;
+  text-align: center;
+  display: block;
+  background: transparent url("../img/itemLine.png") center 115px;
+}
+.affix ul li.active a {
+  color: #75f8ff;
+}
+.tabContent {
+  flex: 1;
+  min-height: 900px;
+  position: relative;
+}
+.tabContent div.show {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  display: none;
+}
+.tabContent div.show.active {
+  display: block;
+}
+div.searchCommon {
+  width: 100%;
+  height: 80px;
+}
+.styled_select {
+  width: 147px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  color: #fff;
+  background: transparent url(../img/searchBg.png) no-repeat right center;
+}
+.selectCommon {
+  width: 147px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  padding-left: 17px;
+  color: #fff;
+}
+.selcetDrop {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 180px;
+  height: 290px;
+  color: #fff;
+  font-size: 14px;
+  background: transparent url(../img/selectBg.png) repeat-x;
+  display: none;
+  z-index: 999;
+}
+.selcetDrop .selectDropWrap {
+  width: 98%;
+  height: 90%;
+  padding-top: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.selcetDrop p {
+  width: 50%;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+}
+.selectDropWrap::-webkit-scrollbar {
+  display: none;
+}
+.area_Select {
+  width: 310px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 18px;
+  color: #fff;
+  zoom: 1;
+}
+.index_mask_select {
+  width: 147px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  padding-right: 10px;
+  margin-left: -10px;
+  font-size: 18px;
+  color: #fff;
+  background: transparent url(../img/searchBg.png) no-repeat right center;
+}
+.index_mask_list {
+  top: 64px;
+  width: 180px;
+  height: 290px;
+  color: #fff;
+  font-size: 14px;
+  background: transparent url(../img/selectBg.png) repeat-x;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: none;
+  z-index: 999;
+}
+.index_mask_list::-webkit-scrollbar {
+  display: none;
+}
+.abs {
+  position: absolute;
+}
+.index_mask_li {
+  height: 35px;
+  line-height: 35px;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.tuBiao {
+  background: transparent url("../img/tuBiaoBg.png") no-repeat;
+  background-size: 100% 100%;
+  height: 373px;
+  overflow: hidden;
+  position: relative;
+}
+.bugle img:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.bugle img:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+}
+.bugle img:nth-child(3) {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+}
+.bugle img:nth-child(4) {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+.itemTubiao {
+  background: transparent url("../img/leftTubiaoBg.png") no-repeat;
+  background-size: 100% 100%;
+  width: 49%;
+  height: 424px;
+  overflow: hidden;
+  position: relative;
+}
+.itemTubiao.fl {
+  margin: 20px 20px 20px 0;
+  -webkit-flex: 1;
+  /*Chrome*/
+  -ms-flex: 1;
+  /*IE 10*/
+  flex: 1;
+  /* NEW ,Spec - Opera 12.1,Firefox 20+*/
+  -webkit-box-flex: 1;
+  /*OLD -iOS 6-,Safari 3.1-6*/
+  -moz-box-flex: 1;
+  /*OLD - Firefox 19-*/
+}
+.itemTubiao.fr {
+  margin-top: 20px;
+  -webkit-flex: 1;
+  /*Chrome*/
+  -ms-flex: 1;
+  /*IE 10*/
+  flex: 1;
+  /* NEW ,Spec - Opera 12.1,Firefox 20+*/
+  -webkit-box-flex: 1;
+  /*OLD -iOS 6-,Safari 3.1-6*/
+  -moz-box-flex: 1;
+  /*OLD - Firefox 19-*/
+}
+/*分页*/
+.pager {
+  margin: 15px;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+.pager li {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+.pager li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+.pager li a img {
+  vertical-align: middle;
+}
+.pager li.active {
+  border: 1px solid transparent;
+  background: transparent;
+}
+.pager li.active a {
+  color: #73f8ff;
+}
+.txtMarquee-top {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.txtMarquee-top .infoList li {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+}
+.tableCommonDT {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.tableCommonDT thead {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #4569db;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.tableCommonDT thead tr th {
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  width: 7%;
+}
+.infoLis li {
+  display: flex;
+  flex-direction: column;
+}
+.infoList li span {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  flex: 1;
+  align-items: center;
+  padding: 0 10px;
+}
+.txtMarquee-top .infoList li.blue > span {
+  color: #28bfe4;
+}
+.txtMarquee-top .infoList li.blue > span.cur {
+  color: #ebd647;
+}
+.infoList span.cur {
+  color: #ebd647;
+}
+.tablebox {
+  width: 98%;
+  height: 300px;
+  overflow: hidden;
+  margin: 5px auto;
+}
+.tablebox table {
+  width: 100%;
+}
+.tablebox table th,
+.tablebox table td {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+}
+.tablebox table th,
+.tablebox table td.cur {
+  color: #ebd647;
+}
+.tablebox table th {
+  color: #fff;
+  font-size: 14px;
+  background-color: #042154;
+  border-bottom: 1px solid #4569db;
+}
+.tablebox table td img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tablebox table tbody tr.blue td {
+  color: #28bfe4;
+}
+.tablebox table tbody tr.blue td.cur {
+  color: #ebd647;
+}
+.tablebox.table_md table td,
+.tablebox.table_md table th {
+  line-height: 50px;
+  height: 50px;
+}
+/*# sourceMappingURL=cocalTrend.css.map */

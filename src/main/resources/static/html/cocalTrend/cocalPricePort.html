@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>煤炭价格</title>
+    <link rel="stylesheet" href="../../style/normalize.css"/>
+    <link rel="stylesheet" href="../../style/common.css"/>
+    <link rel="stylesheet" href="../../style/cocalTrend.css"/>
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="index-bg">
+
+<div class="header clear">
+    <div class="headterTab">
+        <span class="bigTitle">煤炭大势</span>
+        <div class="fl">
+            <a href="cocalPriceArea.html" class="active">煤炭价格</a>
+            <a href="cocalStorage.html">煤炭概况</a>
+        </div>
+        <div class="fr">
+            <a href="#">煤炭物流</a>
+            <a href="#">其他信息</a>
+        </div>
+    </div>
+    <a href="../../index.html" class="backIndex"><img src="../../img/home.png" class="fl"><span class="fl">返回首页</span></a>
+</div>
+<div class="container clear">
+    <div class="parent">
+        <div class="affix fl">
+            <ul>
+                <li><a href="cocalPriceArea.html">按地区分</a></li>
+                <li class="active"><a href="cocalPricePort.html">按港口分</a></li>
+                <li><a href="cocalPriceType.html">按煤种分</a></li>
+            </ul>
+        </div>
+        <div class="tabContent">
+            <div class="show active clear">
+                <div class="searchCommon">
+                    <div class="styled_select">
+                        <div id="portChouse" class="selectCommon">
+                            请选择港口
+                        </div>
+                        <div class="portsTypes selcetDrop">
+                            <div class="portsTypesWrap selectDropWrap">
+                                <p>天津港</p>
+                                <p>镇江港</p>
+                                <p>日照港</p>
+                                <p>连云港</p>
+                                <p>京唐港</p>
+                                <p>广州港</p>
+                                <p>大连港</p>
+                                <p>青岛港</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tuBiao clear">
+                    <div class="bugle">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                        <img src="../../img/zhuangshi1.png">
+                    </div>
+                    <table class="tableCommonDT">
+                        <thead>
+                        <tr>
+                            <th>报价港口</th>
+                            <th>产品名称</th>
+                            <th>煤炭产地</th>
+                            <th>灰份</th>
+                            <th>挥发份</th>
+                            <th>硫份</th>
+                            <th>水份</th>
+                            <th>粘结指数</th>
+                            <th>发热量</th>
+                            <th>本期价格</th>
+                            <th>价格类型</th>
+                            <th>时间</th>
+                        </tr>
+                        </thead>
+                    </table>
+                    <div class="txtMarquee-top">
+                        <div class="bd" id="portGetData">
+                            <ul class="infoList" id="portAjax">
+                                <li>
+                                    <span class="portName">青岛港1</span>
+                                    <span class="portType">主焦煤1</span>
+                                    <span>澳大利亚</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="portName">青岛港2</span>
+                                    <span class="portType">主焦煤2</span>
+                                    <span>澳大利亚</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="portName">青岛港3</span>
+                                    <span class="portType">主焦煤3</span>
+                                    <span>澳大利亚</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="portName">青岛港4</span>
+                                    <span class="portType">主焦煤4</span>
+                                    <span>澳大利亚</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+                                <li>
+                                    <span class="portName">青岛港5</span>
+                                    <span class="portType">主焦煤5</span>
+                                    <span>澳大利亚</span>
+                                    <span>9.5</span>
+                                    <span>19</span>
+                                    <span>0.6</span>
+                                    <span>-</span>
+                                    <span>80-85</span>
+                                    <span>-</span>
+                                    <span class="cur">1600</span>
+                                    <span>场地价</span>
+                                    <span>2018-10-12</span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <ol class="pager">
+                        <li><a href="1" class="leftArrow"><img src="../../img/leftArrow.png" alt=""/></a></li>
+                        <li><a href="1" class="leftArrow">上一页</a></li>
+                        <li><a href="2" class="rightArrow">下一页</a></li>
+                        <li><a href="2" class="rightArrow"><img src="../../img/rightArrow.png" alt=""/></a></li>
+                    </ol>
+                </div>
+                <div style="display: flex;">
+                    <div class="itemTubiao fl">
+                        <div class="bugle">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                        </div>
+                        <div class="commonPadding">
+                            <div id="varietyPortEchart" style="width: 100%;height:340px;"></div>
+                        </div>
+                    </div>
+                    <div class="itemTubiao fr">
+                        <div class="bugle">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                            <img src="../../img/zhuangshi1.png">
+                        </div>
+                        <div class="commonPadding">
+                            <div id="summaryPortEchart" style="width: 100%;height:340px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../../js/echarts.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="../../js/cocalPrice/portPrice.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo.mapper.CoalMapper" >
+
+    <select id="getCoalSituation" parameterType="int" resultType="com.example.demo.entity.CoalSituation">
+        select id,city,province,productport,productname,productarea,ash,volatilization,sulphur,moisture,cohere_index,calorific_value,price,price_type,time
+        from coal_situation
+        where id=#{id};
+    </select>
+
+    <!--<resultMap id="BaseResultMap" type="com.lgp.SpringBoot.com.coal.bean.CoalSituation" >-->
+        <!--<id column="id" property="id" jdbcType="VARCHAR" />-->
+        <!--<result column="province" property="province" jdbcType="VARCHAR" />-->
+        <!--<result column="city" property="city" jdbcType="VARCHAR" />-->
+        <!--<result column="class_situation" property="class_situation" jdbcType="VARCHAR" />-->
+    <!--</resultMap>-->
+
+    <!--<sql id="getCoalSituation" >-->
+        <!--id,province, city,class_situation-->
+    <!--</sql>-->
+    <!--<select id="getCoalSituation" resultMap="BaseResultMap" parameterType="java.lang.String" >-->
+        <!--select-->
+        <!--<include refid="Base_Column_List" />-->
+        <!--from coal_situation-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</select>-->
+    <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.String" >-->
+        <!--delete from appuser_message-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</delete>-->
+    <!--<insert id="insert" parameterType="com.lgp.SpringBoot.bean.AppMessage" >-->
+        <!--insert into appuser_message (id, message, senddate-->
+        <!--)-->
+        <!--values (#{id,jdbcType=VARCHAR}, #{message,jdbcType=VARCHAR}, #{senddate,jdbcType=TIMESTAMP}-->
+        <!--)-->
+    <!--</insert>-->
+    <!--<insert id="insertSelective" parameterType="com.lgp.SpringBoot.bean.AppMessage" >-->
+        <!--insert into appuser_message-->
+        <!--<trim prefix="(" suffix=")" suffixOverrides="," >-->
+            <!--<if test="id != null" >-->
+                <!--id,-->
+            <!--</if>-->
+            <!--<if test="message != null" >-->
+                <!--message,-->
+            <!--</if>-->
+            <!--<if test="senddate != null" >-->
+                <!--senddate,-->
+            <!--</if>-->
+        <!--</trim>-->
+        <!--<trim prefix="values (" suffix=")" suffixOverrides="," >-->
+            <!--<if test="id != null" >-->
+                <!--#{id,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="message != null" >-->
+                <!--#{message,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="senddate != null" >-->
+                <!--#{senddate,jdbcType=TIMESTAMP},-->
+            <!--</if>-->
+        <!--</trim>-->
+    <!--</insert>-->
+    <!--<update id="updateByPrimaryKeySelective" parameterType="com.lgp.SpringBoot.bean.AppMessage" >-->
+        <!--update appuser_message-->
+        <!--<set >-->
+            <!--<if test="message != null" >-->
+                <!--message = #{message,jdbcType=VARCHAR},-->
+            <!--</if>-->
+            <!--<if test="senddate != null" >-->
+                <!--senddate = #{senddate,jdbcType=TIMESTAMP},-->
+            <!--</if>-->
+        <!--</set>-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</update>-->
+    <!--<update id="updateByPrimaryKey" parameterType="com.lgp.SpringBoot.bean.AppMessage" >-->
+        <!--update appuser_message-->
+        <!--set message = #{message,jdbcType=VARCHAR},-->
+        <!--senddate = #{senddate,jdbcType=TIMESTAMP}-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+    <!--</update>-->
+
+    <!--<select id="selectAll" resultMap="BaseResultMap">-->
+        <!--select-->
+        <!--id, message, senddate-->
+        <!--from appuser_message-->
+        <!--order by senddate asc-->
+    <!--</select>-->
+
+    <!--<select id="getMessById" resultMap="BaseResultMap" parameterType="java.lang.String">-->
+        <!--select-->
+        <!--id, message, senddate-->
+        <!--from-->
+        <!--appuser_message-->
+        <!--where id = #{id,jdbcType=VARCHAR}-->
+        <!--order by senddate asc-->
+    <!--</select>-->
+
+</mapper>

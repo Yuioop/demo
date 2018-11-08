@@ -1,0 +1,28 @@
+[
+  {
+    "name":"肥煤",
+    "product":"京唐港",
+    "huifen":"10",
+    "huifafen":"32",
+    "liufen":"1.80",
+    "water":"-",
+    "nianjieshu":"99",
+    "fahot":"-",
+    "priceNow":"1180",
+    "pricetype":"场地价",
+    "publicDate":"2018-10-12"
+  },
+  {
+    "name":"气煤",
+    "product":"日照港",
+    "huifen":"6-8",
+    "huifafen":"33",
+    "liufen":"1.90",
+    "water":"-",
+    "nianjieshu":"95",
+    "fahot":"-",
+    "priceNow":"1350",
+    "pricetype":"车板价",
+    "publicDate":"2018-10-12"
+  }
+]
